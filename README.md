@@ -1,4 +1,4 @@
-# sigma-python-wheel
+# sigma-python
 
 > Python轮子合集, 包含Python, 机器学习等.
 
