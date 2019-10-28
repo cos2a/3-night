@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.5.9.RELEASE</version>
+    <version>2.2.0.RELEASE</version>
     <relativePath/>
   </parent>
 
@@ -25,13 +25,7 @@
 
   <dependencies>
 
-    <!--Spring Boot 快速启动-->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
-    </dependency>
-
-    <!--Spring Boot Web 快速配置 #封装了WebMVC 内嵌式Tomcat-->
+    <!--web-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
@@ -43,7 +37,7 @@
       <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
 
-    <!--使用Thymeleaf 页面模版引擎-->
+    <!--使用 Thymeleaf 页面模版引擎-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
