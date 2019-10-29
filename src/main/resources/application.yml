@@ -1,3 +1,8 @@
+server:
+  session:
+    timeout: 3600 #session 超时时间 (秒)
+  port: 8080  #端口号
+
 spring:
   application:
     name: spring-boot #spring boot 快速启动
@@ -12,8 +17,5 @@ spring:
     prefix: classpath:/templates/   # 构建URL时, 前缀.
     suffix: .html                   # 构建URL时, 后缀.
     template-resolver-order:        # 配置多个视图解析器时执行顺序.
-    view-names: index               # 可以解析的视图名称, 逗号分隔.
-server:
-  session:
-    timeout: 3600 #session 超时时间 (秒)
-  port: 8080  #端口号
+#    view-names: *                   # 可以解析的视图名称, 逗号分隔.
+
