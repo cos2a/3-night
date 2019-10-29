@@ -1,4 +1,4 @@
-# sigma-server
+# sigma-browser-ui
 
 ## 项目涉及的相关文档
 ```
