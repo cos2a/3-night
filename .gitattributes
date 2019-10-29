@@ -1,4 +1,3 @@
-*.css linguist-language=java
-*.js linguist-language=java
-*.html linguist-language=java
-*.ipynb linguist-language=java
+*.css linguist-language=vue
+*.js linguist-language=vue
+*.html linguist-language=vue

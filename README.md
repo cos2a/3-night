@@ -1,15 +1,26 @@
-# standalone-server
+# sigma-server
 
-> 单点服务，jar包启动。对一些简单的业务场景快启动，简化部署构建流程！
+## 项目涉及的相关文档
+```
+Node API          http://nodejs.cn/api/
+Webpack           https://webpack.docschina.org/
+Vue               https://cn.vuejs.org/
+Vue-Cli           https://cli.vuejs.org/zh/
+Vue-Router        https://router.vuejs.org/zh/
+Vue-Loader        https://vue-loader.vuejs.org/zh/
+Vue-Eslint        https://github.com/vuejs/eslint-config-vue
+Sass              https://www.sass.hk/
+Normalize.css     http://necolas.github.io/normalize.css/
+Vuex              https://vuex.vuejs.org/zh/
+```
 
-## 选型
+```
+npm install -g serve
+ -s 参数的意思是将其架设在 Single-Page Application 模式下
+ 这个模式会处理即将提到的路由问题
+serve -s dist
+```
 
-- vue
-- element-ui
-- axios
+http://39.105.164.165:1337/sigma/swagger-ui.html
 
------
-
-- Spring Boot 2.2.0
-- Thymeleaf
-- MyBatis Plus
+npm run dev -- --DEV_SERVER='sigma'
