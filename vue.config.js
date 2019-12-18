@@ -13,9 +13,9 @@ let devServer
 if (argv.DEV_SERVER === 'local') {
   devServer = `http://localhost:${port}/mock/`;
 } else if (argv.DEV_SERVER === 'sigma'){
-  devServer = 'http://39.105.164.165:1337/sigma';
+  devServer = 'http://39.105.164.165:1337/api';
 } else {
-  devServer = 'http://127.0.0.1:1337/sigma';
+  devServer = 'http://127.0.0.1:1337/api';
 }
 
 // If your port is set to 80,
@@ -34,12 +34,12 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  // publicPath: '/',
-  // outputDir: 'dist',
-  // assetsDir: 'sigma',
   publicPath: '/',
-  outputDir: 'resources',
-  assetsDir: 'static',
+  outputDir: 'dist',
+  assetsDir: 'sigma',
+  // publicPath: '/',
+  // outputDir: 'resources',
+  // assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {
