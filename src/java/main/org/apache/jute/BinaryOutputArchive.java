@@ -104,6 +104,7 @@ public class BinaryOutputArchive implements OutputArchive {
             writeInt(-1, "len");
             return;
         }
+        //转化成Buffer
         ByteBuffer bb = stringToByteBuffer(s);
         writeInt(bb.remaining(), "len");
         out.write(bb.array(), bb.position(), bb.limit());
