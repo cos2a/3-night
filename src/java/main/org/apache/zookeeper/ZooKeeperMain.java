@@ -45,8 +45,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * 连接工具
  * The command line client to ZooKeeper.
- *
  */
 @InterfaceAudience.Public
 public class ZooKeeperMain {
@@ -265,7 +265,7 @@ public class ZooKeeperMain {
         return new LinkedList<String>(commandMap.keySet());
     }
 
-    protected String getPrompt() {       
+    protected String getPrompt() {
         return "[zk: " + host + "("+zk.getState()+")" + " " + commandCount + "] ";
     }
 
@@ -283,7 +283,14 @@ public class ZooKeeperMain {
                  Integer.parseInt(cl.getOption("timeout")),
                  new MyWatcher(), readOnly);
     }
-    
+
+    /**
+     * 启动
+     * @param args
+     * @throws KeeperException
+     * @throws IOException
+     * @throws InterruptedException
+     */
     public static void main(String args[])
         throws KeeperException, IOException, InterruptedException
     {
@@ -638,7 +645,7 @@ public class ZooKeeperMain {
             usage();
             return false;
         }
-        
+
         boolean watch = args.length > 2;
         String path = null;
         List<ACL> acl = Ids.OPEN_ACL_UNSAFE;
@@ -679,13 +686,13 @@ public class ZooKeeperMain {
                 connectToZK(host);
             }
         }
-        
+
         // Below commands all need a live connection
         if (zk == null || !zk.getState().isAlive()) {
             System.out.println("Not connected");
             return false;
         }
-        
+
         if (cmd.equals("create") && args.length >= 3) {
             int first = 0;
             CreateMode flags = CreateMode.PERSISTENT;
