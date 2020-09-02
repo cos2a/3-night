@@ -24,7 +24,7 @@ import java.io.IOException;
 
 /**
  * Interface that is implemented by generated classes.
- * 
+ * 用来实现序列化的数据类型
  */
 @InterfaceAudience.Public
 public interface Record {
